@@ -1,5 +1,9 @@
 version: '3'
 
+networks:
+  xes-platform-network:
+    name: xes-platform-network
+
 services:
   web:
     build: .
@@ -8,4 +12,7 @@ services:
     volumes:
       - .:/zoho-node
     ports:
-      - "8080:8000"
+      - "8020:8000"
+    networks:
+      - xes-platform-network
+    restart: unless-stopped

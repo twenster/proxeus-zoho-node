@@ -8,3 +8,4 @@ venv
 db.sqlite3
 zcrmsdk_oauthtokens.txt
 zcrmsdk_error.log
+zoho/config.py
